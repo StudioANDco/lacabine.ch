@@ -27,7 +27,8 @@
     <meta property="og:url" content="http://lacabine.ch/" />
     <meta property="og:description" content="La Cabine - Shop éthique - Coworking - Café" />
 
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet">
 
     <link rel="canonical" href="http://lacabine.ch/">
 
@@ -60,6 +61,7 @@
 
             color: white;
             background-color: #77E0C1;
+            font-weight: bold;
         }
 
         @media (min-width: 1600px) {
@@ -78,7 +80,7 @@
             width: 24em;
             height: 24em;
             border: 3px solid white;
-            margin: 2em auto;
+            margin: 0.5em auto;
         }
 
         .inner {
@@ -140,28 +142,81 @@
             top: 50%
         }
 
-        p {
+        .inner p {
             margin-bottom: 16%;
             margin-left: -0.1em;
         }
 
         @media (max-width: 639px) {
-            p {
+            .inner p {
                 margin-bottom: 1.5em;
                 font-size: 20px;
             }
         }
 
         @media (max-width: 405px) {
-            p {
+            .inner p {
                 font-size: 15px;
             }
         }
 
         p.name {
             font-size: 1.5em;
-            font-weight: bold;
+            text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.1);
             margin-top: 5%;
+        }
+
+        .info {
+            text-align: center;
+            font-size: 1em;
+        }
+
+        .info p {
+            margin: 0.5em 0;
+        }
+
+        .info p.soon {
+            font-size: 1.5em;
+        }
+
+        .info label {
+            display: none;
+        }
+
+        form {
+            margin-top: 1em;
+        }
+
+        form div {
+            vertical-align: middle;
+            display: inline-block;
+        }
+
+        .info input,
+        .info button {
+            height: 2.2em;
+            margin: 0;
+            padding: 0 1.2em;
+            border: 0;
+            font-size: 0.8em;
+        }
+
+        .info input[type="email"] {
+            width: 20em;
+            padding: 0 1em;
+        }
+
+        .info input[type="submit"] {
+            background-color: white;
+            color: #00a651;
+            font-weight: bold;
+            padding: 0 1.2em;
+        }
+
+        .info input[type="submit"]:hover {
+            background-color: #1cd861;
+            color: white;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -184,6 +239,38 @@
             <p class="name">La Cabine</p>
             <p class="street">Industrie 40 | Sion</p>
             <p class="what">Shop Éthique | Café | Coworking</p>
+        </div>
+
+        <div class="info">
+            <p class="soon">Ouverture prochaine !</p>
+
+            <p>Vous voulez être tenu au courant ?</p>
+
+            <div id="mc_embed_signup">
+                <form action="https://andco.us14.list-manage.com/subscribe/post?u=0703124e4d56878df06e0ebec&amp;id=c52855a1bf" method="post"
+                      id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+                    <div id="mc_embed_signup_scroll">
+
+                        <div class="mc-field-group">
+                            <label for="mce-EMAIL">E-mail:</label>
+                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Votre adresse e-mail" aria-required="true" required="required">
+                        </div>
+
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>
+
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                            <input type="text" name="b_0703124e4d56878df06e0ebec_c52855a1bf" tabindex="-1" value="">
+                        </div>
+
+                        <div class="clear"><input type="submit" value="Envoyer" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                    </div>
+                </form>
+            </div>
+
+            <!--End mc_embed_signup-->
         </div>
     </div>
 
