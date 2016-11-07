@@ -61,8 +61,16 @@
             text-transform: uppercase;
 
             color: white;
-            background-color: #77E0C1;
+            background-color: #222;
             font-weight: bold;
+
+            animation: colorCycle ease-in infinite 8s;
+            animation-direction: alternate;
+        }
+
+        @keyframes colorCycle {
+            0%   { background-color: #222222; }
+            100% { background-color: #866d4b; }
         }
 
         .outer {
@@ -201,31 +209,32 @@
         }
 
         .info input[type="email"]:focus {
-            outline-color: #222222;
+            outline-color: #C0C0C0;
         }
 
         ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-            color: #77E0C1;
+            color: #333;
         }
 
         ::-moz-placeholder { /* Mozilla Firefox 19+ */
-            color: #77E0C1;
+            color: #333;
             opacity: 1;
         }
 
         :-ms-input-placeholder { /* Internet Explorer 10-11 */
-            color: #77E0C1;
+            color: #333;
         }
 
         .info input[type="submit"] {
             background-color: white;
-            color: #77E0C1;
+            color: #333;
             font-weight: bold;
             padding: 0 1.2em;
         }
 
         .info input[type="submit"]:hover {
-            background-color: #222222;
+            background-color: #C2B6A5;
+            color: white;
             cursor: pointer;
         }
     </style>
