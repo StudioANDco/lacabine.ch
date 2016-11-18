@@ -59,30 +59,27 @@
             font-size: 26px;
             font-size: 3vmin;
             text-transform: uppercase;
+            text-align: center;
+
+            padding: 10px;
+            padding-bottom: 0;
 
             color: white;
             background-color: #222;
             background: url('files/texture.png') repeat;
-            font-weight: bold;
         }
 
-        .outer {
-            width: 24em;
-            height: 24em;
-            border: 3px solid white;
-            margin: 0.5em auto;
-        }
-
-        .inner {
-            padding: 8%;
-            height: 84%;
-            width: 84%;
+        .logo-container {
+            width: 12em;
+            height: 12em;
             position: relative;
+            text-align: left;
+            margin: 1em auto;
         }
 
         .logo {
-            width: 40%;
-            height: 40%;
+            width: 100%;
+            height: 100%;
             position: relative;
         }
 
@@ -133,15 +130,10 @@
             top: 50%
         }
 
-        .inner .contact {
-            position: absolute;
-            top: 4px;
-            right: 12px;
-            margin: 0;
-            padding: 0;
+        .contact {
         }
 
-        .inner .contact a {
+        .contact a {
             color: inherit;
             text-decoration: none;
             font-size: 0.8em;
@@ -150,20 +142,24 @@
             font-weight: normal;
         }
 
-        .inner p {
-            margin-bottom: 18%;
-            margin-left: -0.1em;
+        .contact img {
+            width: 40px;
+            height: 40px;
         }
 
         p.name {
-            font-size: 1.5em;
-            text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.1);
-            margin-top: 5%;
+            font-size: 2.4em;
+            margin: -0.2em 0;
+        }
+
+        hr {
+            width: 23em;
         }
 
         .info {
             text-align: center;
             font-size: 1em;
+            margin-top: 1em;
         }
 
         .info p {
@@ -234,58 +230,62 @@
 </head>
 
 <body>
-    <div class="outer">
-        <div class="inner">
-            <div class="logo">
-                <div class="left"></div>
-                <div class="left-separator"></div>
-                <div class="middle-v"></div>
-                <div class="right"></div>
+    <div class="logo-container">
+        <div class="logo">
+            <div class="left"></div>
+            <div class="left-separator"></div>
+            <div class="middle-v"></div>
+            <div class="right"></div>
 
-                <div class="top"></div>
-                <div class="top-separator"></div>
-                <div class="middle-h"></div>
-                <div class="bottom"></div>
-            </div>
-
-            <p class="name">La Cabine</p>
-            <p class="street">Industrie 40 | Sion</p>
-            <p class="what">Concept store | Café | Coworking</p>
-
-            <p class="contact"><a href="mailto:allo@lacabine.ch">allo@lacabine.ch</a></p>
+            <div class="top"></div>
+            <div class="top-separator"></div>
+            <div class="middle-h"></div>
+            <div class="bottom"></div>
         </div>
+    </div>
 
-        <div class="info">
-            <p class="soon">Ouverture prochaine !</p>
+    <p class="name">La Cabine</p>
+    <p class="street">Industrie 40 | Sion</p>
+    <p class="what">Concept store | Café | Coworking</p>
 
-            <p>Vous voulez être tenu au courant ?</p>
+    <hr>
 
-            <div id="mc_embed_signup">
-                <form action="https://andco.us14.list-manage.com/subscribe/post?u=0703124e4d56878df06e0ebec&amp;id=c52855a1bf" method="post"
-                      id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
-                    <div id="mc_embed_signup_scroll">
+    <p class="contact">
+        <a href="mailto:allo@lacabine.ch"><img src="files/icons/mail.png" alt="e-mail"></a>
+        <a href="https://www.facebook.com/LaCabineSion/"><img src="files/icons/facebook.png" alt="Facebook"></a>
+        <a href="https://twitter.com/LaCabineSion"><img src="files/icons/twitter.png" alt="Twitter"></a>
+        <a href="https://www.instagram.com/lacabinesion/"><img src="files/icons/instagram.png" alt="Instagram"></a>
+    </p>
+    <div class="info">
+        <p class="soon">Ouverture prochaine !</p>
 
-                        <div class="mc-field-group">
-                            <label for="mce-EMAIL">E-mail:</label>
-                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Votre adresse e-mail" aria-required="true" required="required">
-                        </div>
+        <p>Vous voulez être tenu au courant ?</p>
 
-                        <div id="mce-responses" class="clear">
-                            <div class="response" id="mce-error-response" style="display:none"></div>
-                            <div class="response" id="mce-success-response" style="display:none"></div>
-                        </div>
+        <div id="mc_embed_signup">
+            <form action="https://andco.us14.list-manage.com/subscribe/post?u=0703124e4d56878df06e0ebec&amp;id=c52855a1bf" method="post"
+                  id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+                <div id="mc_embed_signup_scroll">
 
-                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                            <input type="text" name="b_0703124e4d56878df06e0ebec_c52855a1bf" tabindex="-1" value="">
-                        </div>
-
-                        <div class="clear"><input type="submit" value="Envoyer" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                    <div class="mc-field-group">
+                        <label for="mce-EMAIL">E-mail:</label>
+                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Votre adresse e-mail" aria-required="true" required="required">
                     </div>
-                </form>
-            </div>
 
-            <!--End mc_embed_signup-->
+                    <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>
+
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                        <input type="text" name="b_0703124e4d56878df06e0ebec_c52855a1bf" tabindex="-1" value="">
+                    </div>
+
+                    <div class="clear"><input type="submit" value="Envoyer" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                </div>
+            </form>
         </div>
+
+        <!--End mc_embed_signup-->
     </div>
 
     <script>
